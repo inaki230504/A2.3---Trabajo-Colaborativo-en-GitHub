@@ -1,0 +1,28 @@
+import java.util.Scanner
+public class main {
+public static void main(String[] args) {
+Scanner num1 = new Scanner(System.in);
+Scanner num2 = new Scanner(System.in);
+System.out.println("Dime un numero");
+int num = num1.nextint;
+System.out.println("Dime otro numero");
+int otronum = num2.nextint;
+int resultado = 0;
+Scanner metodo1 = new Scanner(System.in);
+System.out.println("Que quieres hacer con los numeros");
+System.out.println("1.Multiplicar");
+System.out.println("2.Restar");
+System.out.println("3.Sumar");
+int metodo = metodo1.nextint;
+if(metodo == 1){
+    resultado = Multiplicar.multiplicar(num1, num2);
+}else if(metodo == 2){
+    resultado = Resta.Resta(num1,num2); 
+}else if(metodo == 3){
+    resultado = suma.suma(num1,num2);
+}else{
+    System.out.println("Valor no valido introduce 1 para Multiplicar, 2 para Restar o 3 para Sumar);
+}
+System.out.println("El resultado es " + resultado)
+}
+}

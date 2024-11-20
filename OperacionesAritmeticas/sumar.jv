@@ -1,0 +1,6 @@
+public class suma {
+ public static int suma(int i,int f) {
+ int resultado = i+f
+ return resultado;
+ }   
+}
